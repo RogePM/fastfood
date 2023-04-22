@@ -1,0 +1,72 @@
+package edu.example;
+
+  public class FastFoodItem {
+            private String name;
+            private String type;
+            private double price;
+            private String rating;
+            //setter and getter methods for FastFoodItem 
+            public String getName() {
+                return name;
+            }
+            public void setName(String name) {
+                this.name = name;
+            }
+            Public String getType;
+            public void setType(String type) {
+                this.type = type;
+            }
+            public Double getPrice() {
+                return price;
+            }
+            Public void setPrice(Double price) {
+                this.price = price;
+            }
+            public String getRating() {
+                return rating;
+            }
+            public void setRating(String rating) {
+                this.rating = rating;
+            }
+            public FastFoodItem(String name, String type, double price, String rating) {
+                this.name = name;
+                this.type = type;
+                this.price = price;
+                this.rating = rating;
+
+        public static void main(String[] args) {
+        //array of food items
+        ArrayList<FastFoodItem> fastFoodList = new ArrayList<>();
+
+        FastFoodItem item1 = new FastFoodItem("Burger", "Beef", 4.99, "4.5 stars");
+        FastFoodItem item2 = new FastFoodItem("Fries", "Potato", 2.99, "4 stars");
+        FastFoodItem item3 = new FastFoodItem("Chicken Nuggets", "Chicken", 3.99, "4 stars");
+        FastFoodItem item4 = new FastFoodItem("Taco", "Beef", 1.99, "3.5 stars");
+        //print out the items
+        System.out.println(item1);
+        System.out.println(item2);
+        System.out.println(item3);
+        System.out.println(item4);
+
+        
+        //create toString method in FastFoodItem class
+          public String toString()
+        FastFoodList.add(item1);
+        FastFoodList.add(item2);
+        FastFoodList.add(item3);
+        FastFoodList.add(item4);
+
+
+       // System.out.println("Fast Food Items:");
+        //for (int i = 0; i < fastFoodList.size(); i++) {
+          //  System.out.println("Item " + (i + 1) + ": " + fastFoodList.get(i).toString());
+          System.out.println("Fast Food Items:");
+        System.out.println("Item 1: " + item1.toString());
+        System.out.println("Item 2: " + item2.toString());
+        System.out.println("Item 3: " + item3.toString());
+        
+        System.out.println("Fast Food Items:");
+        for (int i = 0; i < fastFoodList.size(); i++) {
+            System.out.println("Item " + (i + 1) + ": " + fastFoodList.get(i).toString());
+       // }
+    }
